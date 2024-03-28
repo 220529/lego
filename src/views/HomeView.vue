@@ -14,5 +14,13 @@ export default defineComponent({
   components: {
     HelloWorld,
   },
+  setup() {
+    const obj = {
+      a: 1,
+    };
+    const obj2 = {
+      a: 1,
+    };
+  },
 });
 </script>
