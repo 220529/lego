@@ -19,4 +19,6 @@ module.exports = {
   tabWidth: 2,
   // 使用 tab 缩进
   useTabs: false,
+  // 尾随逗号
+  trailingComma: "es5",
 };
