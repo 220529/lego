@@ -1,6 +1,6 @@
 <template>
   <a-layout class="index">
-    <a-layout-header>Header</a-layout-header>
+    <a-layout-header><Header /></a-layout-header>
     <a-layout-content class="index-content">
       <router-view></router-view>
     </a-layout-content>
@@ -10,9 +10,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Header from "@/components/Header.vue";
 
 export default defineComponent({
   name: "IndexView",
+  components: {
+    Header,
+  },
 });
 </script>
 <style lang="less" scoped>
