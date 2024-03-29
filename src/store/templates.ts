@@ -1,7 +1,7 @@
 import { Module } from "vuex";
 import { TemplateData, fetchTemplatesApi } from "@/api/templates";
 import { ResponseListData } from "@/api/response";
-import { GlobalDataProps } from "./index";
+import { GlobalDataProps } from "@/store";
 
 export interface TemplatesDataProps {
   data: TemplateData[];

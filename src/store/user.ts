@@ -1,5 +1,5 @@
 import { Module } from "vuex";
-import { GlobalDataProps } from "./index";
+import { GlobalDataProps } from "@/store";
 
 export interface UserProps {
   name?: string;

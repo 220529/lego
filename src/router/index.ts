@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
-import Index from "../views/Index.vue";
-import Home from "../views/Home.vue";
-import Template from "../views/Template.vue";
+import Index from "@/views/Index.vue";
+import Home from "@/views/Home.vue";
+import Template from "@/views/Template.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -25,12 +25,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/login",
     name: "login",
-    component: () => import(/* webpackChunkName: "about" */ "../views/Login.vue"),
+    component: () => import(/* webpackChunkName: "about" */ "@/views/Login.vue"),
   },
   {
     path: "/editor/:id",
     name: "editor",
-    component: () => import(/* webpackChunkName: "about" */ "../views/Editor.vue"),
+    component: () => import(/* webpackChunkName: "about" */ "@/views/Editor.vue"),
   },
 ];
 

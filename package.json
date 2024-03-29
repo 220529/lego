@@ -11,7 +11,10 @@
   "dependencies": {
     "ant-design-vue": "^4.1.2",
     "axios": "^1.6.8",
+    "classnames": "^2.5.1",
     "core-js": "^3.8.3",
+    "lodash-es": "^4.17.21",
+    "uuid": "^9.0.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
@@ -19,6 +22,9 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
+    "@types/classnames": "^2.3.1",
+    "@types/lodash-es": "^4.17.12",
+    "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
