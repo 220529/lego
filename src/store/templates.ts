@@ -1,13 +1,26 @@
 import { Module } from "vuex";
+import { TemplateData, fetchTemplatesApi } from "@/api/templates";
+import { ResponseListData } from "@/api/response";
 import { GlobalDataProps } from "./index";
 
 export interface TemplatesDataProps {
-  data: string[];
+  data: TemplateData[];
 }
 
 export const templates: Module<TemplatesDataProps, GlobalDataProps> = {
   state: {
     data: [],
   },
-  mutations: {},
+  mutations: {
+    fetchTemplates(state, payload: ResponseListData<TemplateData>) {
+      const { list } = payload.content;
+      state.data = [...state.data, ...list];
+    },
+  },
+  actions: {
+    async fetchTemplates({ commit }) {
+      const res = await fetchTemplatesApi();
+      commit("fetchTemplates", res);
+    },
+  },
 };

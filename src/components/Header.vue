@@ -1,10 +1,10 @@
 <template>
   <div class="header">
-    <img src="https://lagou-zhaopin-fe.lagou.com/fed/lg-app-fed/8.21/h5/logo.png" />
+    <!-- <img src="https://lagou-zhaopin-fe.lagou.com/fed/lg-app-fed/8.21/h5/logo.png" />
     <div class="userInfo">
       <a-button type="primary" v-if="userInfo.isLogin" @click="logout">退出登录</a-button>
       <a-button type="primary" v-else @click="login">登录</a-button>
-    </div>
+    </div> -->
   </div>
 </template>
 
