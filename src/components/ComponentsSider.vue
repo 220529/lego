@@ -18,7 +18,7 @@ import { defaultTextComponents } from "@/constants/components";
 import { TextComponentProps } from "@/types/component";
 import LText from "@/components/LText.vue";
 export default defineComponent({
-  name: "components-list",
+  name: "components-sider",
   components: {
     LText,
   },
@@ -38,3 +38,8 @@ export default defineComponent({
   },
 });
 </script>
+<style lang="less" scoped>
+.component-item {
+  cursor: pointer;
+}
+</style>

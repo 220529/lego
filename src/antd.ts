@@ -20,6 +20,8 @@ import {
   Slider,
   Radio,
   Select,
+  Collapse,
+  Switch,
 } from "ant-design-vue";
 import "ant-design-vue/dist/reset.css";
 
@@ -55,6 +57,9 @@ const components = [
   Radio.Button,
   Select,
   Select.Option,
+  Collapse,
+  Collapse.Panel,
+  Switch,
 ];
 const install = (app: App) => {
   components.forEach(component => {

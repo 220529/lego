@@ -111,3 +111,8 @@ export const textStyleNames = without(
   "url",
   "text"
 );
+
+export interface UpdateComponentProps {
+  key: keyof AllComponentProps;
+  value: string;
+}
